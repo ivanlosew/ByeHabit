@@ -157,13 +157,14 @@ public class HomeFragment extends Fragment {
     @Override
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (resultCode != Activity.RESULT_CANCELED && resultCode != Activity.RESULT_OK && resultCode != 2) return;
-        String text;
+        if (resultCode == Activity.RESULT_CANCELED) return;
+        String text = "";
         if (resultCode == Activity.RESULT_OK)
             text = "Привычка добавлена";
         else if (resultCode == 2)
             text = "Пустое название привычки";
-        else text = "Достигнуто макисмальное количество привычек";
+        else if (resultCode == 3)
+            text = "Достигнуто макисмальное количество привычек";
         Snackbar.make(root, text, Snackbar.LENGTH_LONG)
                 .setAnchorView(R.id.nav_view)
                 .setBackgroundTint(getResources().getColor(R.color.colorPrimary))

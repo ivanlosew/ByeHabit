@@ -65,7 +65,7 @@ public class HabitAdd extends AppCompatActivity {
             SQLiteDatabase db = dbHelper.getWritableDatabase();
             Cursor c = db.query("habits", null, null, null, null, null, null);
             if (c.getCount() == 3) {
-                setResult(Activity.RESULT_CANCELED, intent);
+                setResult(3, intent);
                 finish();
                 return;
             }
