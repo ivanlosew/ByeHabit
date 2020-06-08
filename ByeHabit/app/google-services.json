@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "446670682651",
+    "firebase_url": "https://byehabit.firebaseio.com",
+    "project_id": "byehabit",
+    "storage_bucket": "byehabit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446670682651:android:01e1caeafe6c6d06b996be",
+        "android_client_info": {
+          "package_name": "com.example.byehabit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "446670682651-v0ts3qkonj7act0h4qq9c5lhvirlaq9a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCS1U8DAgPMVZV65yjR1UIXQi-tEyUbwRw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "446670682651-v0ts3qkonj7act0h4qq9c5lhvirlaq9a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

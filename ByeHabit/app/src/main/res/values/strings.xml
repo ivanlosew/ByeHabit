@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ByeHabit</string>
+    <string name="title_home">Привычки</string>
+    <string name="title_dashboard">Достижения</string>
+    <string name="title_notifications">Настройки</string>
+    <string name="title_habits_m">Я бросил…</string>
+    <string name="title_habits_w">Я бросила…</string>
+</resources>
