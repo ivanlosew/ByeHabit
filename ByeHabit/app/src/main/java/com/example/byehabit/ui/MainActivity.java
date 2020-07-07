@@ -67,19 +67,27 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    //меню (кнопка открытия настроек)
+    //меню (кнопка открытия настроек и справки)
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         menu.add(0, 1, 0, "Настройки");
+        menu.add(0, 2, 0, "Справка");
         return super.onCreateOptionsMenu(menu);
     }
 
-    //открываем настройки
+    //открываем настройки или справку
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if (item.getItemId() == 1) {
-            Intent intent = new Intent(this, SettingsActivity.class);
-            startActivity(intent);
+        Intent intent;
+        switch (item.getItemId()) {
+            case 1:
+                intent = new Intent(this, SettingsActivity.class);
+                startActivity(intent);
+                break;
+            case 2:
+                intent = new Intent(this, HelpActivity.class);
+                startActivity(intent);
+                break;
         }
         return super.onOptionsItemSelected(item);
     }
